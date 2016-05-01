@@ -1,0 +1,19 @@
+<!doctype html>
+<head>
+  <title>Цитатник кожедеда</title>
+  <link href="http://s.bash.im/reset.css" type="text/css" rel="stylesheet" />
+  <link href="http://s.bash.im/bor25.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <h1>Цитатник&nbsp;Кожедеда</h1>
+  <div id="menubar">
+    <div class="options">
+      <a href="/add" class="add last">добавить</a>
+    </div>
+  </div>
+  {% for joke in jokes %}
+  <div class="quote">
+      <div class="text">{{ joke.text }}</div>
+    </div>
+  {% endfor %}
+</body>
